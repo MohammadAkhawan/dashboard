@@ -7,6 +7,10 @@
     font-family: roboto;
 }
 
+p {
+    font-size: 12px;
+}
+
 .big-container {
     height: 100vh;
     display: grid;
@@ -102,7 +106,7 @@
 #search-bar {
     width: 35vw;
     height: 30px;
-    background-color: rgb(218, 232, 238);
+    background-color: #dbeafe;
     border-radius: 14px;
 }
 
@@ -120,7 +124,7 @@
 
 .header-bottom {
     display: flex;
-    padding: 0 50px;
+    padding: 5px 50px;
 }
 
 .greeting {
@@ -148,4 +152,96 @@
 
 .main {
     grid-area: main;
+    background-color: #dbeafe;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "article side-options";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.article {
+    grid-area: article;
+}
+
+.cards {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: white;
+    height: 210px;
+    padding: 50px 30px;
+    border-left: 12px solid orange;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.icons svg {
+    width: 20px;
+    height: 20px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.side-options {
+    grid-area: side-options;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.announce-sections {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.announce {
+    padding: 10px;
+}
+
+.announce h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.buttom-border {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.trend-sections {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+}
+
+.trend h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
